@@ -1,10 +1,11 @@
 import { ComponentProps } from "react"
 import { useSnapshot } from "valtio"
 
+import { getContrastingColor } from "config/helpers"
 import state from "store"
 
 interface Props extends ComponentProps<"div"> {
-  tab: { name: string, icon: string }
+  tab: { name: string, icon: JSX.Element }
   isFilter?: boolean
   isActive?: string
 }
@@ -26,7 +27,9 @@ const Tab = (props: Props) => {
       onClick={props.onClick}
       className={`tab-btn ${props.isFilter ? "rounded-full glasmorphism" : "rounded-sm"}`}
       style={activeStyles}>
-      tab
+      <span style={{color: props.isFilter ? getContrastingColor(snap.color) : "#000"}} className="text-3xl">
+        {props.tab.icon}
+      </span>
     </div>
   )
 }

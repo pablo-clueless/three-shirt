@@ -55,7 +55,11 @@ html {
 }
 
 .filepicker-label {
-  @apply border border-gray-300 py-1.5 px-2 rounded-md shadow-sm text-xs text-gray-700 focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500 cursor-pointer w-fit;
+  @apply border border-gray-300 py-1.5 px-2 rounded-md shadow-sm text-sm text-gray-900 focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500 cursor-pointer w-full text-center font-bold;
+}
+
+.randomizer-container {
+  @apply absolute left-full ml-3 glassmorphism p-3 w-[195px] h-[250px] rounded-md flex flex-col gap-4;
 }
 
 .tab-btn {
@@ -63,7 +67,7 @@ html {
 }
 
 .glassmorphism {
-  background: rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.40);
   box-shadow: 0 2px 30px 0 rgba(31, 38, 135, 0.07);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
@@ -88,4 +92,29 @@ input[type="file"] {
 
 .sketch-picker > div:nth-child(3) {
   display: none !important;
+}
+
+/* actives the hover effect on the bav links */
+.link {
+	position: relative;
+  cursor: pointer;
+}
+
+.link::before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 0;
+	height: 1px;
+	background: #000;
+	transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+@media (hover: hover) and (pointer: fine) {
+	.link:hover::before {
+		left: 0;
+		right: auto;
+		width: 100%;
+	}
 }
