@@ -6,6 +6,7 @@ import andela from "./logo/andela.png"
 import google from "./logo/google.png"
 import figma from "./logo/figma.png"
 import react from "./logo/react.png"
+import traxo from "./logo/traxo.png"
 
 import patter_1 from "./pattern/pattern-1.jpeg"
 import patter_2 from "./pattern/pattern-2.jpg"
@@ -26,5 +27,6 @@ export {
   patter_5,
   react,
   threejs,
+  traxo,
   twitter,
 }

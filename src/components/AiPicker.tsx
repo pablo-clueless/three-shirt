@@ -18,6 +18,7 @@ const AiPicker = (props: Props) => {
         className="aipicker-textarea resize-none"
         placeholder="Generate image with AI"
         rows={6}
+        disabled
       />
       <p className="text-lg font-semibold text-center">
         Not available

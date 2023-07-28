@@ -1,6 +1,6 @@
 import { FigmaLogo, GithubLogo, GlobeSimple, Image, LinkedinLogo, Palette, Robot, Shuffle, TShirt, TwitterLogo } from "@phosphor-icons/react"
 
-import { andela, communitypro, facebook, figma, google, patter_1, patter_2, patter_3, patter_4, patter_5, react, threejs, twitter } from "assets"
+import { andela, communitypro, figma, google, patter_1, patter_2, patter_3, patter_4, patter_5, react, threejs, traxo, twitter } from "assets"
 
 export const EditorTabs = [
   {
@@ -46,11 +46,11 @@ export const DecalTypes: Record<string, {stateProperty: string, filterTab: strin
 export const BrandImages = [
   andela,
   communitypro,
-  facebook,
   figma,
   google,
   react,
   threejs,
+  traxo,
   twitter,
 ]
 

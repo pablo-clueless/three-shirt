@@ -14,8 +14,8 @@ const state: Record<string, any> = proxy({
   color: "#000",
   isLogoTexture: true,
   isFullTexture: false,
-  logoDecal: "/threejs.png",
-  fullDecal: "/threejs.png",
+  logoDecal: "/traxo.png",
+  fullDecal: "/traxo.png",
 })
 
 export default state
