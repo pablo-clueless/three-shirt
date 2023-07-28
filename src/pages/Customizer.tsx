@@ -139,7 +139,7 @@ const Customizer = () => {
             />
           ))}
           <button onClick={downloadCanvasToImage} className="download-btn">
-            <DownloadSimple className="text-3xl" />
+            <DownloadSimple className="text-3xl" color={snap.color} />
           </button>
         </motion.div>
         </>

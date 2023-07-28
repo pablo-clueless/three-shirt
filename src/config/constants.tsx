@@ -1,4 +1,4 @@
-import { FigmaLogo, Image, Palette, Robot, Shuffle, TShirt } from "@phosphor-icons/react"
+import { FigmaLogo, GithubLogo, GlobeSimple, Image, LinkedinLogo, Palette, Robot, Shuffle, TShirt, TwitterLogo } from "@phosphor-icons/react"
 
 import { andela, communitypro, facebook, figma, google, patter_1, patter_2, patter_3, patter_4, patter_5, react, threejs, twitter } from "assets"
 
@@ -60,4 +60,11 @@ export const PatternImages = [
   patter_3,
   patter_4,
   patter_5,
+]
+
+export const Links = [
+  {icon: <GlobeSimple />, url: "https://okunolasamson.vercel.app"},
+  {icon: <GithubLogo />, url: "https://github.com/pablo-clueless"},
+  {icon: <TwitterLogo />, url: "https://twitter.com/pablo_clueless"},
+  {icon: <LinkedinLogo />, url: "https://linkedin.com/in/samson-okunola"},
 ]

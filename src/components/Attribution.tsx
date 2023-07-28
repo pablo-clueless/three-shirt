@@ -1,18 +1,13 @@
-import { useSnapshot } from "valtio"
-
-import state from "store"
+import { Links } from "config/constants"
 
 const Attribution = () => {
-  const snap = useSnapshot(state)
-
   return (
-    <div className="fixed top-4 left-1/2 -translate-x-1/2 glassmorphism p-2 rounded-md text-center !z-20">
-      <p className="text-xs font-medium">
-        code at
-        <a href="https://github.com/pablo-clueless/three-shirt" className="font-bold ml-1 link" style={{color: snap.color}}>
-          https://github.com/pablo-clueless/three-shirt
+    <div className="flex flex-col items-center gap-4 fixed top-1/2 right-2 -translate-y-1/2 glassmorphism p-2 rounded-md text-center !z-20">
+      {Links.map((link, index) => (
+        <a key={index} href={link.url} target="_blank" className="text-2xl">
+          {link.icon}
         </a>
-      </p>
+      ))}
     </div>
   )
 }
